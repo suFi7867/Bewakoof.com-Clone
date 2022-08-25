@@ -1,8 +1,9 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useContext } from 'react'
 import { AppContext } from '../Context/AppContext'
 import DiscountProduct from './smallComp.jsx/DiscountProduct'
+import Loading from './smallComp.jsx/Loding'
 import PopularCat from './smallComp.jsx/PopularCat'
 import SliderImages from './smallComp.jsx/SliderImages'
 import StoopidCollection4D from './smallComp.jsx/StoopidCollection4D'
@@ -20,7 +21,25 @@ function LandingPage (){
   // for products
  const path = "/products/men-printed-shirts"
 
- console.log(data)
+ // is Loading   // 
+ const [isLoading, setIsLoading] = useState(true);
+
+ setTimeout(() => {
+ setIsLoading(false)
+  
+ }, 1500);
+  
+
+ // console.log(data)
+
+ if(isLoading){
+
+  return (  
+     <Loading />
+    ) 
+
+ }
+
   return (
 
     <div style={{marginTop: "150px"}} >

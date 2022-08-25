@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { createContext } from 'react'
 
 
@@ -149,13 +149,33 @@ const data = {
 
 const AppContextProvider = ({children}) => {
 
+  const [isAuth, setIsAuth] = useState(false);
+  const [userName, setUserName] = useState(null)
 
+  const toggle = () => {
+    setIsAuth(!isAuth);
+  };
+
+  const loginUser = (Name) => {
+    setIsAuth(true);
+    console.log("LOGIN USER RUNNING APP CONTEXT")
+    setUserName(Name)
+   // console.log(Name)
+  };
+
+  const logoutUser = () => {
+    setIsAuth(false);
+    setUserName(null)
+    console.log(isAuth,userName)
+  };
+
+ // console.log(userName)
     
   return (
 
     <div>
 
-  <AppContext.Provider value={{data}} >
+  <AppContext.Provider value={{data, userName, isAuth, toggle, loginUser, logoutUser }} >
 
       {children}
 

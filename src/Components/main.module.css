@@ -296,3 +296,25 @@
 .upHead > div > div{
    padding: 5px 10px;
   }
+
+  .LogoutHOver{
+    background-color: #fdd835;
+    border-radius: 5px;
+    padding: 2px 10px;
+  }
+  
+  .LogoutHOver:hover{
+    background-color: yellowgreen;
+  }
+
+  .loadingCSS {
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 12%;
+    left: 45%;
+    text-align: center;
+    width: 250px;
+    border: 1px solid  #fdd835;
+  }
+

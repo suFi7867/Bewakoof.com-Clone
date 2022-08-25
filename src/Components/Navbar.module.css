@@ -76,3 +76,15 @@
 .XXX{
     border-bottom-color:aquamarine
 }
+
+.LogoutHOver{
+
+
+  background-color: #fdd835;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+.LogoutHOver:hover{
+  background-color: yellowgreen;
+}

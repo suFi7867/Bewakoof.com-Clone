@@ -1,20 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "./main.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { VscHeart } from "react-icons/vsc";
 import { IoBagOutline } from "react-icons/io5";
 import { IoSearchOutline } from "react-icons/io5";
-import { BsBorderBottom, BsPhone } from "react-icons/bs";
+
+
 
 import { FaUserAlt } from "react-icons/fa";
+import { AppContext } from "../Context/AppContext";
 
 
 const Navbar = () => {
   
+  const {userName, isAuth, logoutUser } = useContext(AppContext);
+
+  console.log(isAuth)
 
   const [active, setActive] = useState("Men");
   const [info, setinfo] = useState(false);
-  const [isLoggedIn, setLoggedIn] = useState(true);
+  
+ // console.log(userName)
 
   const token = localStorage.getItem("jwtoken");
   
@@ -32,6 +38,15 @@ const Navbar = () => {
     textDecoration: "none",
     BsBorderBottom: "yellow"
   };
+
+
+  /// LOGOUT 
+  const LogOut_User = () =>{
+
+    console.log("LOGOUT IS RUNNUNG")
+    alert("LogOut User Successfully")
+    logoutUser()
+  }
 
 
 
@@ -68,7 +83,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/products/men-printed-shirts"
+              to="/men-clothing"
               onClick={() => setActive("")}
             >
               MEN
@@ -78,7 +93,7 @@ const Navbar = () => {
                 <ul>
                   <li>
                     <NavLink
-                      to="/products/men-printed-shirts"
+                      to="/men-clothing"
                       onClick={() => setActive("")}
                     >
                       <h5>TopWear</h5>
@@ -86,7 +101,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/products/men-printed-shirts"
+                      to="/men-clothing"
                       onClick={() => setActive("")}
                     >
                       Printed T-Shirt
@@ -94,7 +109,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/products/men-printed-shirts"
+                      to="/men-clothing"
                       onClick={() => setActive("")}
                     >
                       Oversized T-shirts
@@ -102,7 +117,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/products/men-printed-shirts"
+                      to="/men-clothing"
                       onClick={() => setActive("")}
                     >
                       Fashion T-Shirts
@@ -110,7 +125,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/products/men-printed-shirts"
+                      to="/men-clothing"
                       onClick={() => setActive("")}
                     >
                       {" "}
@@ -119,7 +134,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/products/men-printed-shirts"
+                      to="/men-clothing"
                       onClick={() => setActive("")}
                     >
                       Half Sleeve T-Shirt
@@ -127,49 +142,49 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/products/men-printed-shirts"
+                      to="/men-clothing"
                       onClick={() => setActive("")}
                     >
                       Full Slave T_Shirt
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">Shirts</NavLink>
+                    <NavLink to="/men-clothing">Shirts</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">Vests</NavLink>
+                    <NavLink to="/men-clothing">Vests</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">
+                    <NavLink to="/men-clothing">
                       Co-ord Sets
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">Kurtas</NavLink>
+                    <NavLink to="/men-clothing">Kurtas</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">Henleys</NavLink>
+                    <NavLink to="/men-clothing">Henleys</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">Jackets</NavLink>
+                    <NavLink to="/men-clothing">Jackets</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">
+                    <NavLink to="/men-clothing">
                       Sweatshirt & Hoodie
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">
+                    <NavLink to="/men-clothing">
                       Sweaters
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">
+                    <NavLink to="/men-clothing">
                       Customize T-shirts
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/men-printed-shirts">
+                    <NavLink to="/men-clothing">
                       Sweaters
                     </NavLink>
                   </li>
@@ -321,7 +336,7 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <NavLink to="/products/women-tshirts" onClick={() => setActive("")}>
+            <NavLink to="/women-clothing" onClick={() => setActive("")}>
               WOMEN
             </NavLink>
             <div id={styles.mainMenu2}>
@@ -334,42 +349,42 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      to="/products/women-tshirts"
+                      to="/women-clothing"
                       onClick={() => setActive("")}
                     >
                       Half Sleeve T-Shirt
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/women-tshirts">
+                    <NavLink to="/women-clothing">
                       Full Slave T_Shirt
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
-                      to="/products/women-tshirts"
+                      to="/women-clothing"
                       onClick={() => setActive("")}
                     >
                       Printed T-Shirt
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/women-tshirts"> Kurties</NavLink>
+                    <NavLink to="/women-clothing"> Kurties</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/women-tshirts">Vest</NavLink>
+                    <NavLink to="/women-clothing">Vest</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/women-tshirts"></NavLink>
+                    <NavLink to="/women-clothing"></NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/women-tshirts">Polo T-Shirt</NavLink>
+                    <NavLink to="/women-clothing">Polo T-Shirt</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/women-tshirts">Shirts</NavLink>
+                    <NavLink to="/women-clothing">Shirts</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/women-tshirts">Kurtas</NavLink>
+                    <NavLink to="/women-clothing">Kurtas</NavLink>
                   </li>
                 </ul>
                 <ul>
@@ -486,7 +501,7 @@ const Navbar = () => {
                       <span>Amine Collection</span>
                     </NavLink>
                   </li>
-                  {/* <li><NavLink to="/products/oneplus"><https://images.bewakoof.com/nav_menu/WinterWear-Bewakoof-Homepage-NavigationCircleIcon-1630653435.png" alt=""/><span>Winter Collection</span></NavLink></li> */}
+                  {/* <li><NavLink to="mobile-covers-india"><https://images.bewakoof.com/nav_menu/WinterWear-Bewakoof-Homepage-NavigationCircleIcon-1630653435.png" alt=""/><span>Winter Collection</span></NavLink></li> */}
                   <li>
                     <NavLink to="/products/women-pyjamas">
                       <img
@@ -528,58 +543,58 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <NavLink to="/products/mobile-covers">MOBILE COVERS</NavLink>
+            <NavLink to="/mobile-covers-india">MOBILE COVERS</NavLink>
             <div id={styles.mainMenu3}>
               <div className={styles.dropDown}>
                 <ul>
                   <li>
-                    <NavLink to="/products/xiaomi">
+                    <NavLink to="/mobile-covers-india">
                       <h2 className={styles.dropH2}>POPULAR</h2>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/xiaomi">
+                    <NavLink to="/mobile-covers-india">
                       <h3>Xiaomi</h3>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/xiaomi">Realme 9 Power</NavLink>
+                    <NavLink to="/mobile-covers-india">Realme 9 Power</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/xiaomi">Xiaomi Mi 10T</NavLink>
+                    <NavLink to="/mobile-covers-india">Xiaomi Mi 10T</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/xiaomi">Xiaomi Redami K2</NavLink>
+                    <NavLink to="/mobile-covers-india">Xiaomi Redami K2</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/samsung">
+                    <NavLink to="/mobile-covers-india">
                       <h3>Sumsang Galaxy F62</h3>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/samsung"></NavLink>
+                    <NavLink to="/mobile-covers-india"></NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/samsung">Sumsung Galaxy F41</NavLink>
+                    <NavLink to="/mobile-covers-india">Sumsung Galaxy F41</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/samsung">Sumsumg Galaxy A30</NavLink>
+                    <NavLink to="/mobile-covers-india">Sumsumg Galaxy A30</NavLink>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <NavLink to="/products/oneplus">
+                    <NavLink to="mobile-covers-india">
                       <h3>Oneplus</h3>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/oneplus">Oneplus 9R</NavLink>
+                    <NavLink to="mobile-covers-india">Oneplus 9R</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/oneplus">Oneplus 8 pro</NavLink>
+                    <NavLink to="mobile-covers-india">Oneplus 8 pro</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products/oneplus">Oneplus 8T</NavLink>
+                    <NavLink to="mobile-covers-india">Oneplus 8T</NavLink>
                   </li>
                   <li>
                     <NavLink to="/products/realme">
@@ -635,7 +650,7 @@ const Navbar = () => {
 
                 <ul>
                   <li>
-                    <NavLink to="/products/oneplus">
+                    <NavLink to="mobile-covers-india">
                       <span></span>
                       <img
                         src="https://images.bewakoof.com/nav_menu/bewakoof-online-fashion-COTM-mobile-cover-navigation-box-desktop-1612275399.jpg"
@@ -660,46 +675,48 @@ const Navbar = () => {
             </div>
             <div id={styles.searchBarsData}></div>
           </li>
-          {!token && (
+          {!isAuth && (
             <NavLink
               id={styles.loginButton}
-              className={styles.lInk}
+             
               to="/login"
               onClick={() => setActive("")}
+              className={styles.LogoutHOver} 
             >
               Login
             </NavLink>
           )}
           { (
             <li
-              className="relative"
-              onMouseOver={() => setinfo(true)}
-              onMouseLeave={() => setinfo(false)}
+           
             >
-              <p>
-                <FaUserAlt className="cursor-pointer text-[18px] ml-2" />
-              </p>
-              {info && (
-                <div className="absolute text-center top-[20px] left-[-80px] shadow-lg border rounded-sm  bg-white w-auto px-4 py-4">
-                  <div className="flex items-center">
-                    <img
-                    //  src={user.user.avatar}
-                      alt="avatar"
-                      className="w-[30px] h-[30px] rounded-full"
-                    />
-                    <p className="text-[18px] ml-2 font-[500]">
-                   
+              
+              {isAuth && (
+                <div style={{textAlign:"center"}} >
+                <div style={{display:"flex", gap:"10px", alignItems:"center" , textAlign:"center"}}>
+                  <p>
+                    
+                <FaUserAlt />
+                  </p> 
+                  <div >
+                 
+                    <p style={{fontWeight :"bold"}}>
+                    {userName}
                     </p>
                   </div>
-                  <p className="text-[16px]  my-2 w-full ml-2 font-[600]">
+                  <p >
                  
                   </p>
-                  <button
-                    
-                    className="text-black bg-[#fdd835] py-1 px-2 font-[600]"
-                  >
+                 
+                <button 
+                onClick={LogOut_User}
+                className={styles.LogoutHOver} 
+                 >
                     Logout
-                  </button>
+                 </button>
+                </div>
+
+
                 </div>
               )}
             </li>
@@ -707,20 +724,22 @@ const Navbar = () => {
 
           <li>
             <p
-              className="cursor-pointer text-xl"
+              
              
             >
-              <VscHeart />
+               <NavLink to="/wishlist"><VscHeart /></NavLink>
+              
             </p>
           </li>
           <li>
             <p
-              className="cursor-pointer text-xl"
+              
              
             >
-              <span className="relative">
-                <IoBagOutline />
-                <span className="absolute top-[-5px] left-3 text-[11px] flex items-center justify-center bg-[#fdd835] rounded-full h-[18px] w-[18px] text-center">
+              <span >
+              <NavLink to="/cart"><IoBagOutline  /></NavLink>
+                
+                <span >
                 
                 </span>
               </span>
