@@ -13,11 +13,12 @@ import TwoImage from './smallComp.jsx/TwoImages'
 
 
 
+
 function LandingPageAcc (){
 
   const {data} = useContext(AppContext)
  // for products
- const path = "/products/mobile-covers"
+ const path = "/mobile-covers-india"
 
 
  

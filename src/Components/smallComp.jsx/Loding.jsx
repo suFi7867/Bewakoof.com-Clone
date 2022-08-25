@@ -8,7 +8,7 @@ const Loading = () => {
     <>
     <div style={{width: "1200px", height : "800px"}} >
 
-      <div  className={styles.loadingCSS} >
+      <div   className={styles.loadingCSS} >
      
         <img
           width="250px"

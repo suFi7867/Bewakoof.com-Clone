@@ -63,7 +63,7 @@ const ss = () => {
         <Grid className={styles.NavbarCss}  templateColumns='repeat(3, 20% 30% 40%)' gap={2} >
             
             <GridItem>
-
+          
             <Link to="/">
                 <Image width="80%"
                  src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg"

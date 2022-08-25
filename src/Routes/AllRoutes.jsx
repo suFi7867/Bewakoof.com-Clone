@@ -4,6 +4,7 @@ import LandingPage from '../Components/LandingPage'
 import LandingPageAcc from '../Components/LandingPageAcc'
 import LandingPageWomen from '../Components/LandingPageWomen'
 import Login from '../Components/login'
+import MenProducts from '../Components/MenProducts'
 import PrivateRoute from './PrivateRoute'
 
 
@@ -22,7 +23,7 @@ const AllRoutes = () => {
             <Route path='/landingPage/accessories' element={<LandingPageAcc />} />
 
             <Route path='/men-clothing' 
-            element={ <PrivateRoute> <h1>MEN PAGE</h1> </PrivateRoute> } />
+            element={ <PrivateRoute> <MenProducts /> </PrivateRoute> } />
 
             <Route path='/women-clothing' 
             element={ <PrivateRoute> <h1>MEN PAGE</h1> </PrivateRoute> } />

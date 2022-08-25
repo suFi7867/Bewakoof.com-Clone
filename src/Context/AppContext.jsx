@@ -144,8 +144,99 @@ const data = {
     }
 
 
-  }
-  
+  }  
+
+  //npm i react-hover-image
+const menData = [
+  {
+    id:1,
+    Display_image : "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+    Title: "Bubble Gum Stripe T-Shirt",
+    price:499,
+    strikeprice:1299,
+    moreImage: [
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+    ]
+  },
+  {
+    id:2,
+    Display_image : "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+    Title: "Toffe Half Sleeve T-shirt",
+    price:299,
+    strikeprice:699,
+    moreImage: [
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+    ]
+  },
+  {
+    id:3,
+    Display_image : "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+    Title: "Men's Blue & Pink Color Block T-shirt    ",
+    price:399,
+    strikeprice:899,
+    moreImage: [
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+    ]
+  },
+  {
+    id:4,
+    Display_image : "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608118-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608134-4.jpg",
+    price:499,
+    strikeprice:1299,
+    moreImage: [
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+    ]
+  },
+  {
+    id:5,
+    Display_image : "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751638-2.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751632-1.jpg",
+    Title: "Toffe Half Sleeve T-shirt",
+    price:299,
+    strikeprice:699,
+    moreImage: [
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
+      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+    ]
+  },
+  {
+    id:6,
+    Display_image : "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751023-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751034-3.jpg",
+    price:399,
+    strikeprice:899,
+    moreImage: [
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
+      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+    ]
+  },
+]
 
 const AppContextProvider = ({children}) => {
 
@@ -175,7 +266,7 @@ const AppContextProvider = ({children}) => {
 
     <div>
 
-  <AppContext.Provider value={{data, userName, isAuth, toggle, loginUser, logoutUser }} >
+  <AppContext.Provider value={{data, userName, isAuth, toggle, loginUser, logoutUser, menData }} >
 
       {children}
 

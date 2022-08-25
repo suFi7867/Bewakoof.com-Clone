@@ -12,14 +12,12 @@ import TwoImage from './smallComp.jsx/TwoImages'
 
 
 
-
-
 function LandingPage (){
 
   const {data} = useContext(AppContext)
 
   // for products
- const path = "/products/men-printed-shirts"
+ const path = "/men-clothing"
 
  // is Loading   // 
  const [isLoading, setIsLoading] = useState(true);

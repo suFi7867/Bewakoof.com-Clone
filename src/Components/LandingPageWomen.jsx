@@ -20,7 +20,7 @@ function LandingPageWomen (){
 
 
     // for products
- const path = "/products/women-tshirts"
+ const path = "/women-clothing"
 
 
  
