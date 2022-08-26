@@ -19,7 +19,7 @@ const SingleProductPage = () => {
 
  const [data, setData] = useState(null)
  const [DefaultImg, setImage] = useState()
- const {menData,cartData, handleCart} = useContext(AppContext)
+ const {CartDataToMatch,cartData, handleCart} = useContext(AppContext)
  
 
 
@@ -50,7 +50,8 @@ const SingleProductPage = () => {
 
  useEffect(()=>{
 
-    let obj = menData.filter((el)=>{
+ 
+    let obj = CartDataToMatch.filter((el)=>{
         if(el.id === Number(id)){
             return true
         }

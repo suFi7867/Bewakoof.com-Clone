@@ -7,7 +7,7 @@ import ProductCard from './smallComp.jsx/ProductCard'
 import Loading from './smallComp.jsx/Loding'
 
 
-const MenProducts = () => {
+const WomenProducts = () => {
 
 
     const {data, AllProductsData } = useContext(AppContext)
@@ -45,14 +45,14 @@ const MenProducts = () => {
       <Wrap justify='center' style={{ margin:"auto", marginTop:"20px"}}  >
 
 
-             <Text color="gray.500" fontWeight="bold" > HOME / MEN /   PRODUCTS </Text>
+             <Text color="gray.500" fontWeight="bold" > HOME / WOMEN /   PRODUCTS </Text>
 
              <Divider orientation='horizontal' />  
 
              <VStack>
 
 
-             <Text align="center" fontSize="20" fontWeight="bold" >Men Clothing(8803)</Text>
+             <Text align="center" fontSize="20" fontWeight="bold" >Women Clothing(9999)</Text>
             
  
                   
@@ -74,7 +74,7 @@ const MenProducts = () => {
 
             <SimpleGrid spacing={5}  columns={[1,2,2,3]}>
 
-            {AllProductsData.menData.map((el)=> (
+            {AllProductsData.womenData.map((el)=> (
                 <ProductCard  {...el} />
             ) )} 
 
@@ -98,4 +98,4 @@ const MenProducts = () => {
   )
 }
 
-export default MenProducts
+export default WomenProducts

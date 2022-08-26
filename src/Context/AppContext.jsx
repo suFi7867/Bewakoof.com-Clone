@@ -147,98 +147,469 @@ const data = {
   }  
 
   //npm i react-hover-image
-const menData = [
+ 
+
+const AllProductsData = {
+  menData : [
+    {
+      id:1,
+      Display_image : "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836690-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836695-2.jpg",
+      Title: "suFi's Blue T-shirt",
+      price:699,
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836690-1.jpg",
+        "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836695-2.jpg",
+        "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836701-3.jpg",
+        "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836706-4.jpg",
+        "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836717-6.jpg"
+      ]
+    },
+    {
+      id:2,
+      Display_image : "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834278-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834283-2.jpg",
+      Title: "Donald Duck (DL) Half Sleeves AOP T-Shirt",
+      price:499,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834278-1.jpg",
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834283-2.jpg",
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834288-3.jpg",
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834283-2.jpg",
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834294-4.jpg"
+      ]
+    },
+    {
+      id:3,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078759-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078765-2.jpg",
+      Title: "Men's Black & Red Color Block Polo T-shirt   ",
+      price:399,
+      strikeprice:12000,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078759-1.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078765-2.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078770-3.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078780-5.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078791-7.jpg"
+      ]
+    },
+    {
+      id:4,
+      Display_image : "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179088-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179098-3.jpg",
+      price:499,
+      Title: "suFi Full Sleeve T-shirt",
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179088-1.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179098-3.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179093-2.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179109-5.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179104-4.jpg"
+      ]
+    },
+    {
+      id:5,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955140-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg",
+      Title:"Men's Red Abstract Printed Slim Fit Shirt",
+      price:799,
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955140-1.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955151-3.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955156-4.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg"
+      ]
+    },
+    {
+      id:6,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708213-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg",
+      Title: "Black Half Sleeve T-shirt",
+      price:399,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708213-1.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708218-2.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708229-4.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg"
+      ]
+    },{
+      id:7,
+      Display_image : "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+      Title: "Bubble Gum Stripe T-Shirt",
+      price:499,
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+      ]
+    },
+    {
+      id:8,
+      Display_image : "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+      Title: "Toffe Half Sleeve T-shirt",
+      price:299,
+      strikeprice:699,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+      ]
+    },
+    {
+      id:9,
+      Display_image : "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+      Title: "Men's Blue & Pink Color Block T-shirt    ",
+      price:399,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+      ]
+    },
+    {
+      id:10,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608118-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608134-4.jpg",
+      price:499,
+      Title: "suFi Full Sleeve T-shirt",
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+      ]
+    },
+    {
+      id:11,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751638-2.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751632-1.jpg",
+      Title: "Toffe Half Sleeve T-shirt",
+      price:299,
+      strikeprice:699,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+      ]
+    },
+    {
+      id:12,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751023-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751034-3.jpg",
+      Title: "Black Half Sleeve T-shirt",
+      price:399,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+      ]
+    },
+    
+   
+  ],
+  womenData : [
+    {
+      id:13,
+      Display_image : "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810540-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810556-4.jpg",
+      Title:"Naaz's Black Friends Typography T-shirt",
+      price:699,
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810540-1.jpg",
+        "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810556-4.jpg",
+        "https://i.im.ge/2022/07/29/Fwb5aG.jpg",
+        "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810566-6.jpg",
+        "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810577-8.jpg"
+      ]
+    },
+    {
+      id:14,
+      Display_image : "https://images.bewakoof.com/t1080/women-s-red-boyfriend-t-shirt-170465-1658918677-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/women-s-red-boyfriend-t-shirt-170465-1658918699-5.jpg",
+      Title: "Donald Duck (DL) Half Sleeves AOP T-Shirt",
+      price:499,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/women-s-red-boyfriend-t-shirt-170465-1658918677-1.jpg",
+        "https://images.bewakoof.com/t1080/women-s-red-boyfriend-t-shirt-170465-1658918699-5.jpg",
+        "https://images.bewakoof.com/t1080/women-s-red-boyfriend-t-shirt-170465-1658918683-2.jpg",
+        "https://images.bewakoof.com/t1080/women-s-red-boyfriend-t-shirt-170465-1658918693-4.jpg",
+        "https://images.bewakoof.com/t1080/women-s-red-boyfriend-t-shirt-170465-1658919098-6.jpg"
+      ]
+    },
+    {
+      id:15,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078759-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078765-2.jpg",
+      Title: "Men's Black & Red Color Block Polo T-shirt   ",
+      price:399,
+      strikeprice:12000,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078759-1.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078765-2.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078770-3.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078780-5.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078791-7.jpg"
+      ]
+    },
+    {
+      id:16,
+      Display_image : "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179088-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179098-3.jpg",
+      price:499,
+      Title: "suFi Full Sleeve T-shirt",
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179088-1.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179098-3.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179093-2.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179109-5.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179104-4.jpg"
+      ]
+    },
+    {
+      id:17,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955140-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg",
+      Title:"Men's Red Abstract Printed Slim Fit Shirt",
+      price:799,
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955140-1.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955151-3.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955156-4.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg"
+      ]
+    },
+    {
+      id:18,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708213-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg",
+      Title: "Black Half Sleeve T-shirt",
+      price:399,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708213-1.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708218-2.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708229-4.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg"
+      ]
+    },{
+      id:19,
+      Display_image : "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+      Title: "Bubble Gum Stripe T-Shirt",
+      price:499,
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+      ]
+    },
+    {
+      id:20,
+      Display_image : "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+      Title: "Toffe Half Sleeve T-shirt",
+      price:299,
+      strikeprice:699,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+      ]
+    },
+    {
+      id:21,
+      Display_image : "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+      Title: "Men's Blue & Pink Color Block T-shirt    ",
+      price:399,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+      ]
+    },
+    {
+      id:22,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608118-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608134-4.jpg",
+      price:499,
+      Title: "suFi Full Sleeve T-shirt",
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+      ]
+    },
+    {
+      id:23,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751638-2.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751632-1.jpg",
+      Title: "Toffe Half Sleeve T-shirt",
+      price:299,
+      strikeprice:699,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+      ]
+    },
+    {
+      id:24,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751023-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751034-3.jpg",
+      Title: "Black Half Sleeve T-shirt",
+      price:399,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+      ]
+    },
+    
+   
+  ],
+}
+
+const CartDataToMatch = [
   {
     id:1,
-    Display_image : "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
-    hover_Image: "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
-    Title: "Bubble Gum Stripe T-Shirt",
-    price:499,
+    Display_image : "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836690-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836695-2.jpg",
+    Title: "suFi's Blue T-shirt",
+    price:699,
     strikeprice:1299,
     moreImage: [
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+      "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836690-1.jpg",
+      "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836695-2.jpg",
+      "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836701-3.jpg",
+      "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836706-4.jpg",
+      "https://images.bewakoof.com/t1080/snazzy-green-half-sleeve-t-shirt-for-men-s-436115-1655836717-6.jpg"
     ]
   },
   {
     id:2,
-    Display_image : "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
-    hover_Image: "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
-    Title: "Toffe Half Sleeve T-shirt",
-    price:299,
-    strikeprice:699,
+    Display_image : "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834278-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834283-2.jpg",
+    Title: "Donald Duck (DL) Half Sleeves AOP T-Shirt",
+    price:499,
+    strikeprice:899,
     moreImage: [
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+      "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834278-1.jpg",
+      "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834283-2.jpg",
+      "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834288-3.jpg",
+      "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834283-2.jpg",
+      "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834294-4.jpg"
     ]
   },
   {
     id:3,
-    Display_image : "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
-    hover_Image: "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
-    Title: "Men's Blue & Pink Color Block T-shirt    ",
+    Display_image : "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078759-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078765-2.jpg",
+    Title: "Men's Black & Red Color Block Polo T-shirt   ",
     price:399,
-    strikeprice:899,
+    strikeprice:12000,
     moreImage: [
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+      "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078759-1.jpg",
+      "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078765-2.jpg",
+      "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078770-3.jpg",
+      "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078780-5.jpg",
+      "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078791-7.jpg"
     ]
   },
   {
     id:4,
-    Display_image : "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608118-1.jpg",
-    hover_Image: "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608134-4.jpg",
+    Display_image : "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179088-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179098-3.jpg",
     price:499,
     Title: "suFi Full Sleeve T-shirt",
     strikeprice:1299,
     moreImage: [
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
-      "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+      "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179088-1.jpg",
+      "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179098-3.jpg",
+      "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179093-2.jpg",
+      "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179109-5.jpg",
+      "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179104-4.jpg"
     ]
   },
   {
     id:5,
-    Display_image : "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751638-2.jpg",
-    hover_Image: "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751632-1.jpg",
-    Title: "Toffe Half Sleeve T-shirt",
-    price:299,
-    strikeprice:699,
+    Display_image : "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955140-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg",
+    Title:"Men's Red Abstract Printed Slim Fit Shirt",
+    price:799,
+    strikeprice:1299,
     moreImage: [
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
-      "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+      "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg",
+      "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955140-1.jpg",
+      "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955151-3.jpg",
+      "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955156-4.jpg",
+      "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg"
     ]
   },
   {
     id:6,
-    Display_image : "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751023-1.jpg",
-    hover_Image: "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751034-3.jpg",
+    Display_image : "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708213-1.jpg",
+    hover_Image: "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg",
     Title: "Black Half Sleeve T-shirt",
     price:399,
     strikeprice:899,
     moreImage: [
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
-      "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+      "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708213-1.jpg",
+      "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg",
+      "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708218-2.jpg",
+      "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708229-4.jpg",
+      "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg"
     ]
   },{
-    id:1,
+    id:7,
     Display_image : "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
     hover_Image: "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
     Title: "Bubble Gum Stripe T-Shirt",
@@ -253,7 +624,7 @@ const menData = [
     ]
   },
   {
-    id:2,
+    id:8,
     Display_image : "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
     hover_Image: "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
     Title: "Toffe Half Sleeve T-shirt",
@@ -268,7 +639,7 @@ const menData = [
     ]
   },
   {
-    id:3,
+    id:9,
     Display_image : "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
     hover_Image: "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
     Title: "Men's Blue & Pink Color Block T-shirt    ",
@@ -283,7 +654,7 @@ const menData = [
     ]
   },
   {
-    id:4,
+    id:10,
     Display_image : "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608118-1.jpg",
     hover_Image: "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608134-4.jpg",
     price:499,
@@ -298,7 +669,7 @@ const menData = [
     ]
   },
   {
-    id:5,
+    id:11,
     Display_image : "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751638-2.jpg",
     hover_Image: "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751632-1.jpg",
     Title: "Toffe Half Sleeve T-shirt",
@@ -313,7 +684,7 @@ const menData = [
     ]
   },
   {
-    id:6,
+    id:12,
     Display_image : "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751023-1.jpg",
     hover_Image: "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751034-3.jpg",
     Title: "Black Half Sleeve T-shirt",
@@ -328,12 +699,193 @@ const menData = [
     ]
   },
   
- 
+    {
+      id:13,
+      Display_image : "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810540-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810556-4.jpg",
+      Title:"Naaz's Black Friends Typography T-shirt",
+      price:699,
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810540-1.jpg",
+        "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810556-4.jpg",
+        "https://i.im.ge/2022/07/29/Fwb5aG.jpg",
+        "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810566-6.jpg",
+        "https://images.bewakoof.com/t1080/women-s-black-friends-typography-boyfriend-t-shirt-234669-1655810577-8.jpg"
+      ]
+    },
+    {
+      id:14,
+      Display_image : "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834278-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834283-2.jpg",
+      Title: "Donald Duck (DL) Half Sleeves AOP T-Shirt",
+      price:499,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834278-1.jpg",
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834283-2.jpg",
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834288-3.jpg",
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834283-2.jpg",
+        "https://images.bewakoof.com/t1080/donald-duck-dl-half-sleeves-aop-t-shirt-303743-1655834294-4.jpg"
+      ]
+    },
+    {
+      id:15,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078759-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078765-2.jpg",
+      Title: "Men's Black & Red Color Block Polo T-shirt   ",
+      price:399,
+      strikeprice:12000,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078759-1.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078765-2.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078770-3.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078780-5.jpg",
+        "https://images.bewakoof.com/t1080/men-s-black-beauty-color-block-polo-t-shirt-492878-1659078791-7.jpg"
+      ]
+    },
+    {
+      id:16,
+      Display_image : "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179088-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179098-3.jpg",
+      price:499,
+      Title: "suFi Full Sleeve T-shirt",
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179088-1.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179098-3.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179093-2.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179109-5.jpg",
+        "https://images.bewakoof.com/t1080/snitch-men-s-white-abstract-printed-slim-fit-shirt-505598-1656179104-4.jpg"
+      ]
+    },
+    {
+      id:17,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955140-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg",
+      Title:"Men's Red Abstract Printed Slim Fit Shirt",
+      price:799,
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955140-1.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955151-3.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955156-4.jpg",
+        "https://images.bewakoof.com/t1080/men-s-red-abstract-printed-slim-fit-shirt-534486-1659955161-5.jpg"
+      ]
+    },
+    {
+      id:18,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708213-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg",
+      Title: "Black Half Sleeve T-shirt",
+      price:399,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708213-1.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708218-2.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708229-4.jpg",
+        "https://images.bewakoof.com/t1080/men-s-white-abstract-printed-slim-fit-shirt-534387-1659708239-6.jpg"
+      ]
+    },{
+      id:19,
+      Display_image : "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+      Title: "Bubble Gum Stripe T-Shirt",
+      price:499,
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+      ]
+    },
+    {
+      id:20,
+      Display_image : "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+      Title: "Toffe Half Sleeve T-shirt",
+      price:299,
+      strikeprice:699,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+      ]
+    },
+    {
+      id:21,
+      Display_image : "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+      Title: "Men's Blue & Pink Color Block T-shirt    ",
+      price:399,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+      ]
+    },
+    {
+      id:22,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608118-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-blue-t-shirt-1092-1659608134-4.jpg",
+      price:499,
+      Title: "suFi Full Sleeve T-shirt",
+      strikeprice:1299,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750451-2.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750457-3.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750473-6.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750446-1.jpg",
+        "https://images.bewakoof.com/t1080/bubble-gum-stripe-t-shirt-368741-1655750467-5.jpg"
+      ]
+    },
+    {
+      id:23,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751638-2.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-red-striped-oversized-t-shirt-425013-1655751632-1.jpg",
+      Title: "Toffe Half Sleeve T-shirt",
+      price:299,
+      strikeprice:699,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814402-4.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814387-1.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814408-6.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814397-3.jpg",
+        "https://images.bewakoof.com/t1080/toffe-half-sleeve-t-shirt-394625-1655814413-7.jpg"
+      ]
+    },
+    {
+      id:24,
+      Display_image : "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751023-1.jpg",
+      hover_Image: "https://images.bewakoof.com/t1080/men-s-black-anime-back-printed-oversized-t-shirt-468376-1655751034-3.jpg",
+      Title: "Black Half Sleeve T-shirt",
+      price:399,
+      strikeprice:899,
+      moreImage: [
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500482-1.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500497-4.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500503-5.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500519-8.jpg",
+        "https://images.bewakoof.com/t1080/black-irismen-color-block-t-shirt-464958-1658500508-6.jpg"
+      ]
+    },
+    
+   
+  
 ]
 
 const AppContextProvider = ({children}) => {
 
-  const [isAuth, setIsAuth] = useState(false);
+  const [isAuth, setIsAuth] = useState(true);
   const [userName, setUserName] = useState(null)
   const [cartData, setCartData] = useState([])
 
@@ -366,7 +918,7 @@ const AppContextProvider = ({children}) => {
 
     <div>
 
-  <AppContext.Provider value={{data, userName, isAuth, toggle, loginUser, logoutUser, menData, cartData, handleCart }} >
+  <AppContext.Provider value={{data, userName, isAuth, toggle, loginUser, logoutUser, AllProductsData, cartData, handleCart, CartDataToMatch }} >
 
       {children}
 
