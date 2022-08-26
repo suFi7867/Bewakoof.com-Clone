@@ -1,6 +1,8 @@
 import { Badge, Flex, Image, Text, VStack } from '@chakra-ui/react';
 import React from 'react'
 import HoverImage from "react-hover-image";
+import { useNavigate } from 'react-router-dom'
+
 
 //  <HoverImage src={yourFile} hoverSrc={yourFileHover} />
 
@@ -14,21 +16,26 @@ strikeprice,
 moreImage,
 }) => {
 
+  const navigate = useNavigate()
 
-    console.log(Display_image, hover_Image)
- 
-    // import HoverImage from "react-hover-image";
+         // to navigate to More Product Details
+    const VisitSingleProduct = () =>{
 
-//  <HoverImage src={yourFile} hoverSrc={yourFileHover} />
+       navigate(`/products/${id}`)
+         
+      
+    }
+
+
 
   return (
-    <div  >
+    <div style={{ display:"flex", flexDirection:"column", justifyContent:"space-between"}} >
       
-      <HoverImage src={Display_image} hoverSrc={hover_Image} />
+      <HoverImage onClick={VisitSingleProduct} src={Display_image} hoverSrc={hover_Image} alt={Title} />
       
-      <VStack align="revert-layer">
-        <Text  >Bewakoof</Text>
-        <Text>{Title}</Text>
+      <VStack align="revert-layer" >
+        <Text fontSize="20"  fontStyle="oblique" fontWeight="bold" marginTop={2}  >Bewakoof</Text>
+        <Text  fontSize="15" color="gray.500" >{Title}</Text>
         <Flex>
         <Text fontWeight="bold" fontSize="2xl" >₹{price}</Text>
        

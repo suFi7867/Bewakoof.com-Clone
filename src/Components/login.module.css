@@ -38,3 +38,18 @@
     
 
   }
+
+
+  .sidebarMain{
+    display: flex;
+    margin: auto;
+  
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    top: -550px;
+    height: 60vh;
+
+  }
+
+  

@@ -9,11 +9,12 @@ import { IoSearchOutline } from "react-icons/io5";
 
 import { FaUserAlt } from "react-icons/fa";
 import { AppContext } from "../Context/AppContext";
+import { Circle, Text } from "@chakra-ui/react";
 
 
 const Navbar = () => {
   
-  const {userName, isAuth, logoutUser } = useContext(AppContext);
+  const {userName, isAuth, logoutUser,cartData } = useContext(AppContext);
 
   console.log(isAuth)
 
@@ -48,7 +49,7 @@ const Navbar = () => {
     logoutUser()
   }
 
-
+console.log(cartData.length)
 
   return (
     <div id={styles.fixedNav}>
@@ -736,11 +737,11 @@ const Navbar = () => {
               
              
             >
-              <span >
+              <span style={{display:"flex", alignContent:"center"}} >
               <NavLink to="/cart"><IoBagOutline  /></NavLink>
                 
-                <span >
-                
+                <span  >
+                  {cartData.length !== 0 ? <Circle minWidth={30} bg="#fdd835" >{cartData.length}</Circle> : "" }
                 </span>
               </span>
             </p>

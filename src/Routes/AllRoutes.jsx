@@ -5,6 +5,7 @@ import LandingPageAcc from '../Components/LandingPageAcc'
 import LandingPageWomen from '../Components/LandingPageWomen'
 import Login from '../Components/login'
 import MenProducts from '../Components/MenProducts'
+import SingleProductPage from '../Components/smallComp.jsx/SingleProductPage'
 import PrivateRoute from './PrivateRoute'
 
 
@@ -31,7 +32,11 @@ const AllRoutes = () => {
             <Route path='/mobile-covers-india' 
             element={ <PrivateRoute> <h1>MEN PAGE</h1> </PrivateRoute> } />
 
-            <Route path='/products/:id' element={<h1>SINGLE PRODUCT PAGE</h1>} />
+            <Route path='/products/:id' element={
+
+            <PrivateRoute>  <SingleProductPage /> </PrivateRoute>
+            
+            } />
 
             <Route path='/login' element={<Login />} />
 

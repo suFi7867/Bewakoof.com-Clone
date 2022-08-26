@@ -3,12 +3,13 @@
 import { Divider, Flex, HStack, Spacer, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { ChevronDownIcon } from '@chakra-ui/icons'
+import styles from "../login.module.css";
 
 const ProductSidebar = () => {
 
 
   return (
-    <VStack w={200} style={{position:"relative", top:"-140px"}} >
+    <VStack minWidth={200} className={styles.sidebarMain} >
       
   
    
