@@ -61,10 +61,6 @@ function LandingPageWomen (){
 
   {/* SLIDER PENDING */}
 
-  <div>
-    <h1 style={{fontSize:"100px", backgroundColor:"red"}} >CLEARANCE ZONE</h1>
-    <h1 style={{fontSize:"100px", backgroundColor:"red"}} >SLIDER PENDING</h1>
-   </div>
 
 
    <SliderImages data={data.SliderData.women2}  path={path}  />
@@ -74,11 +70,7 @@ function LandingPageWomen (){
 
         {/* SLIDER PENDING */}
 
-        <div>
-    <h1 style={{fontSize:"100px", backgroundColor:"red"}} >CLEARANCE ZONE</h1>
-    <h1 style={{fontSize:"100px", backgroundColor:"red"}} >SLIDER PENDING</h1>
-   </div>
-
+  
 
 
    <TwoImage img1={data.longDiv.men2} 

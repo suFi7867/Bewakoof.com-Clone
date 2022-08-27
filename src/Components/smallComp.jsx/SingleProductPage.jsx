@@ -18,7 +18,11 @@ const SingleProductPage = () => {
  const [isButLoading, setIsButLoading] = useState(false);
 
  const [data, setData] = useState(null)
+
  const [DefaultImg, setImage] = useState()
+
+ const [bagbutton, setbagbutton] = useState(true)
+
  const {CartDataToMatch,cartData, handleCart} = useContext(AppContext)
  
 
@@ -30,15 +34,20 @@ const SingleProductPage = () => {
 
 
  const handleClick = () => {
+
     setIsButLoading(true);
-    handleCart(data)
+   
     setTimeout(() => {
       alert("Added To Cart")
     
       setIsButLoading(false);
-      handleCart(data)
+      handleCart(data[0])
+      setbagbutton(false)
+      console.log(data[0])
     }, 1500);
    
+    
+
   };
 
   
@@ -85,10 +94,15 @@ const SingleProductPage = () => {
         <HStack spacing={5} > 
          
             <VStack padding={3} >
+
              <ChevronDownIcon boxSize="30px" color="gray.500"  cursor="pointer" />
+
                 {data[0].moreImage.map((img)=> (
+
                     <Image borderRadius={5} alt={data[0].Title}   width="100px"
-                    objectFit='cover' src={img} onClick={()=>setImage(img)}   cursor="pointer" />
+                    objectFit='cover' src={img} 
+                    onClick={()=>setImage(img)}   cursor="pointer" />
+
                 ) )}
               <ChevronUpIcon boxSize="30px" color="gray.500" cursor="pointer" />  
             </VStack>
@@ -168,7 +182,8 @@ Sleeve Length (in Inch):
         <Button  onClick={()=>handleClick()} fontSize="x-large" padding={8} w="full" colorScheme='yellow'> 
 
         <BiShoppingBag fontSize="30px" /> 
-        {!isButLoading &&  "ADD TO BAG" }
+        {!isButLoading &&  bagbutton && "ADD TO BAG" }
+        {!isButLoading &&  !bagbutton && "ADDED" }
             {isButLoading && (
               <Spinner
                 thickness="4px"

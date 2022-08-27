@@ -14,7 +14,7 @@ import { Circle, Text } from "@chakra-ui/react";
 
 const Navbar = () => {
   
-  const {userName, isAuth, logoutUser,cartData } = useContext(AppContext);
+  const {userName, isAuth, logoutUser,cartData, TotalQty } = useContext(AppContext);
 
   console.log(isAuth)
 
@@ -49,7 +49,7 @@ const Navbar = () => {
     logoutUser()
   }
 
-console.log(cartData.length)
+
 
   return (
     <div id={styles.fixedNav}>
@@ -741,7 +741,7 @@ console.log(cartData.length)
               <NavLink to="/cart"><IoBagOutline  /></NavLink>
                 
                 <span  >
-                  {cartData.length !== 0 ? <Circle minWidth={30} bg="#fdd835" >{cartData.length}</Circle> : "" }
+                  {TotalQty !== 0 ? <Circle minWidth={30} bg="#fdd835" >{TotalQty}</Circle> : "" }
                 </span>
               </span>
             </p>

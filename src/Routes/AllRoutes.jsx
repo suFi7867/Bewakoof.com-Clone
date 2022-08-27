@@ -1,10 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Cart from '../Components/Cart'
 import LandingPage from '../Components/LandingPage'
 import LandingPageAcc from '../Components/LandingPageAcc'
 import LandingPageWomen from '../Components/LandingPageWomen'
 import Login from '../Components/login'
 import MenProducts from '../Components/MenProducts'
+import OrderSuccessfull from '../Components/smallComp.jsx/OrderPlaced'
+import PaymentForm from '../Components/smallComp.jsx/PaymentForm'
 import SingleProductPage from '../Components/smallComp.jsx/SingleProductPage'
 import WomenProducts from '../Components/WomenProducts'
 import PrivateRoute from './PrivateRoute'
@@ -45,12 +48,13 @@ const AllRoutes = () => {
 
             {/* NAVBAR IS DIFFERENT */}
             <Route path='/cart' 
-            element={ <PrivateRoute> <h1>CART PAGE</h1> </PrivateRoute> } />
+            element={ <PrivateRoute> <Cart /> </PrivateRoute> } />
 
             <Route path='/wishlist' 
             element={ <PrivateRoute> <h1>CART PAGE</h1> </PrivateRoute> } />
 
-            <Route path='/checkout/payment' element={<h1> PAYMENT</h1>} />
+            <Route path='/checkout/payment' element={<PaymentForm />} />
+            <Route path='/checkout/OrderDone' element={<OrderSuccessfull />}  />
 
         </Routes>
       
