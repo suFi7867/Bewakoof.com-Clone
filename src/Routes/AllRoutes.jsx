@@ -53,8 +53,10 @@ const AllRoutes = () => {
             <Route path='/wishlist' 
             element={ <PrivateRoute> <h1>CART PAGE</h1> </PrivateRoute> } />
 
-            <Route path='/checkout/payment' element={<PaymentForm />} />
-            <Route path='/checkout/OrderDone' element={<OrderSuccessfull />}  />
+            <Route path='/checkout/payment' 
+            element={  <PrivateRoute>   <PaymentForm /> </PrivateRoute> } />
+            <Route path='/OrderDone' 
+            element={  <PrivateRoute>   <OrderSuccessfull /> </PrivateRoute> }  />
 
         </Routes>
       

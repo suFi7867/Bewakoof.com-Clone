@@ -5,8 +5,6 @@ import { VscHeart } from "react-icons/vsc";
 import { IoBagOutline } from "react-icons/io5";
 import { IoSearchOutline } from "react-icons/io5";
 
-
-
 import { FaUserAlt } from "react-icons/fa";
 import { AppContext } from "../Context/AppContext";
 import { Circle, Text } from "@chakra-ui/react";
