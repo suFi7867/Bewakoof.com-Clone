@@ -1,0 +1,55 @@
+.main {
+    display: flex;
+    width: 100%;
+    font-family: "Montserrat", "sans-serif";
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .submain {
+    display: flex;
+    margin: auto;
+  
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 60vh;
+    background-image: linear-gradient(0deg, #fff4c4, #fff);
+    
+   
+  }
+  
+  .loginP {
+    color: gray;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+  
+
+  .loginmain{
+    display: flex;
+    margin: auto;
+  
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 60vh;
+    
+    
+
+  }
+
+
+  .sidebarMain{
+    display: flex;
+    margin: auto;
+  
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    top: -600px;
+    height: 60vh;
+
+  }
+
+  

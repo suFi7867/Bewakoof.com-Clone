@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.mainNav{
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  
+}
+
+.upHead{
+    width: 1200px;
+    background-color: #eeeeee;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 12px;
+
+}
+
+.upHead > div{
+  display: flex;
+}
+
+.upHead > div > div{
+   padding: 5px 10px;
+  }
+
+
+.NavbarCss{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+  /*   border: 1px solid;*/
+  padding: 0px 0px 8px 0px;
+}
+
+.NavbarCss > div{
+
+    display: grid;
+    align-items: center;
+}
+
+
+.NavbarCss > div > img{
+   width: 80%;
+}
+
+.footerCSS{
+    padding: 50px;
+    width: 100%;
+    margin: auto;
+    background-color: #181818;
+    border: 10px;
+   display: grid;
+   justify-content: center;
+   color:  white;
+}
+
+.active {
+    color: red;
+    text-decoration: none;
+}
+  
+.default {
+  color: black;
+  text-decoration: none;
+}
+  
+.XXX{
+    border-bottom-color:aquamarine
+}
+
+.LogoutHOver{
+
+
+  background-color: #fdd835;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+.LogoutHOver:hover{
+  background-color: yellowgreen;
+}
