@@ -6,7 +6,7 @@ import LandingPageAcc from '../Components/LandingPageAcc'
 import LandingPageWomen from '../Components/LandingPageWomen'
 import Login from '../Components/login'
 import MenProducts from '../Components/MenProducts'
-import OrderSuccessfull from '../Components/smallComp.jsx/OrderPlaced'
+import OrderSuccessfull from '../Components/smallComp.jsx/OrderSuccessfull'
 import PaymentForm from '../Components/smallComp.jsx/PaymentForm'
 import SingleProductPage from '../Components/smallComp.jsx/SingleProductPage'
 import WomenProducts from '../Components/WomenProducts'
@@ -55,7 +55,7 @@ const AllRoutes = () => {
 
             <Route path='/checkout/payment' 
             element={  <PrivateRoute>   <PaymentForm /> </PrivateRoute> } />
-            <Route path='/OrderDone' 
+            <Route path='/OrderSuccessfull' 
             element={  <PrivateRoute>   <OrderSuccessfull /> </PrivateRoute> }  />
 
         </Routes>

@@ -11,7 +11,7 @@ const OrderSuccessfull = () => {
 
   return (
     <div>
-      <VStack margin="auto" width={500} style={{marginTop:"160px"}} >
+      <VStack margin="auto"  style={{marginTop:"100px", marginBottom:"80px",}} >
         <div>
           <img 
           
@@ -20,7 +20,7 @@ const OrderSuccessfull = () => {
           />
         </div>
        
-        <Button  style={{marginTop:"20px"}}  onClick={()=>navigate("/")} fontSize="x" padding={3} w="50%" colorScheme='yellow'> CONTINUE SHOPPING </Button>
+        <Button width="50%"  style={{marginTop:"20px"}}  onClick={()=>navigate("/")} fontSize="x" padding={3} w="50%" colorScheme='yellow'> CONTINUE SHOPPING </Button>
       </VStack>
     </div>
   );

@@ -961,7 +961,7 @@ const AppContextProvider = ({children}) => {
   };
 
   const cartDataEmpty = ()=>{
-    setCartData(null)
+    setCartData([])
   }
 
   const handlePrice = () => {
@@ -979,6 +979,7 @@ const AppContextProvider = ({children}) => {
     setTotalPrice(ans+discountP)
     setTotalQty(Qty)
   };
+  
 
   
 useEffect(() => {
