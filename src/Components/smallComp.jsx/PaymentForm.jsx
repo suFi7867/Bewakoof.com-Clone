@@ -14,7 +14,7 @@ const PaymentForm = () => {
 
         prompt()
         alert("Payment Successfull")
-        navigate("/checkout/OrderDone")
+        navigate("/OrderSuccessfull")
         cartDataEmpty()
 
     }
