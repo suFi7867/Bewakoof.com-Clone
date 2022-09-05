@@ -7,6 +7,9 @@ import PopularCat from './smallComp.jsx/PopularCat'
 import SliderImages from './smallComp.jsx/SliderImages'
 import StoopidCollection4D from './smallComp.jsx/StoopidCollection4D'
 import TwoImage from './smallComp.jsx/TwoImages'
+import styles from "./main.module.css";
+
+
 
 
 
@@ -47,7 +50,7 @@ function LandingPageAcc (){
 
   return (
 
-    <div style={{marginTop: "150px"}} >
+    <div id={styles.landingPageTOP} >
    
    
    

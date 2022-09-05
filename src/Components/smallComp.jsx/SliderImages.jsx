@@ -61,7 +61,7 @@ function SliderImages ({data, path}) {
  
     <Wrap justify="center">
 
-    <SimpleGrid w="fit-content"  spacing={6} columns={[3]}  >
+    <SimpleGrid w="fit-content"  spacing={6} columns={[1,3]}  >
 
     <Image src={data[pre]} style={{cursor:"pointer"}} onClick={()=>Navigation(path)} /> 
          <Image src={data[slide]} style={{cursor:"pointer"}} onClick={()=>Navigation(path)} /> 

@@ -7,7 +7,7 @@ import { IoSearchOutline } from "react-icons/io5";
 
 import { FaUserAlt } from "react-icons/fa";
 import { AppContext } from "../Context/AppContext";
-import { Circle, Text } from "@chakra-ui/react";
+import { Circle, SimpleGrid, Spacer, Text, Wrap } from "@chakra-ui/react";
 
 
 const Navbar = () => {
@@ -51,7 +51,7 @@ const Navbar = () => {
 
   return (
     <div id={styles.fixedNav}>
-      <div className={styles.upperDiv}>
+      <div className={styles.upperDiv}  >
       <div className={styles.upHead} >
            
            <div>
@@ -70,13 +70,19 @@ const Navbar = () => {
         </div>
 
       </div>
-      <div id={styles.navBar}>
-        <div id={styles.menuNav}>
+
+      <Wrap id={styles.WrapNav} w="fit-content"  columns={[1,2]} >
+     
+        
+  
+        <div id={styles.menuNav}  >
           <li>
             <NavLink to="/">
-              <img
+              <img 
+              id="BewakoofLogo"
                 src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg"
-                alt="logo"
+                alt="logo" 
+                
               />
             </NavLink>
           </li>
@@ -662,18 +668,24 @@ const Navbar = () => {
             </div>
           </li>
         </div>
-        <div id={styles.searchBars}>
+
+      <Spacer />
+
+        <div id={styles.searchBars}  >
+ 
           <li>
             <div className={styles.iconInput}>
               <IoSearchOutline />
               <input
                 type="text"
                 id={styles.inpSrch}
+                width="auto"
                 placeholder="search by product,category or collection"
               ></input>
             </div>
             <div id={styles.searchBarsData}></div>
           </li>
+
           {!isAuth && (
             <NavLink
               id={styles.loginButton}
@@ -745,7 +757,9 @@ const Navbar = () => {
             </p>
           </li>
         </div>
-      </div>
+        </Wrap>
+
+     
       <hr className={styles.hrLine} />
 
       <div id={styles.dataBar}>

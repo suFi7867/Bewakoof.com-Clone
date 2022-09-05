@@ -2,10 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import { createContext } from 'react'
 
-
 // 1
 export const AppContext = createContext()
-
 
 const data = {
 
@@ -145,9 +143,7 @@ const data = {
 
 
   }  
-
   //npm i react-hover-image
- 
 
 const AllProductsData = {
   menData : [
@@ -940,6 +936,8 @@ const CartDataToMatch = [
    
   
 ]
+
+
 
 const AppContextProvider = ({children}) => {
 

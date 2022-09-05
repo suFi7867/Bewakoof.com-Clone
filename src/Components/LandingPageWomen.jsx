@@ -9,7 +9,7 @@ import SliderImages from './smallComp.jsx/SliderImages'
 import StoopidCollection4D from './smallComp.jsx/StoopidCollection4D'
 import TwoImage from './smallComp.jsx/TwoImages'
 
-
+import styles from "./main.module.css";
 
 
 
@@ -49,7 +49,7 @@ function LandingPageWomen (){
 
   return (
 
-    <div style={{marginTop: "150px"}} >
+    <div id={styles.landingPageTOP} >
    
    
    <SliderImages data={data.SliderData.women}  path={path}   />

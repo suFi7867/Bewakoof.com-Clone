@@ -171,6 +171,149 @@
     outline: none;
     border: none;
   }
+
+
+  .mainLoadCSS{
+    width: 1200px ;
+    height: 800px;
+  }
+
+  
+  .loadingCSS {
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 12%;
+    left: 45%;
+    text-align: center;
+    width: 250px;
+    border: 1px solid  #fdd835;
+  }
+
+
+  #WrapNav{
+    padding: 0px 50px;
+    width: 100%;
+    
+  }
+
+  #landingPageTOP{
+    margin-top: 150px;
+  }
+
+    /* meidum screens */
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+      .iconInput > input {
+        
+        width: auto;
+          background-color: rgb(238, 238, 238);
+          border-radius: 5px;
+          font-size: 12px;
+          padding: 10px;
+          outline: none;
+          border: none;
+        }
+       
+        #menuNav > li {
+          list-style-type: none;
+          margin: 15px 10px;
+        }
+        
+        #menuNav > li > a > img {
+          width: 100%
+        }
+         
+        
+       .mainLoadCSS{
+         width: fit-content ;
+         height: 600px;
+       }
+  
+       .loadingCSS {
+        background-color: white;
+        border-radius: 25px;
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        text-align: center;
+        width: 150px;
+        border: 1px solid  #fdd835;
+      }
+      
+      .loadingCSS h1{
+        font-size: 0.5rem;
+      }
+      #WrapNav{
+        padding: 0px 0px;
+        width: 100%;
+      }
+
+      #landingPageTOP{
+        margin-top: 250px;
+      }
+    
+      
+    }
+ 
+
+
+         /* small screens */
+    @media all and (min-width: 320px) and (max-width: 767px) {
+     .iconInput > input {
+        
+      width: auto;
+        background-color: rgb(238, 238, 238);
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 10px;
+        outline: none;
+        border: none;
+      }
+     
+      #menuNav > li {
+        list-style-type: none;
+        margin: 15px 10px;
+      }
+      
+      #menuNav > li > a > img {
+        width: 100%
+      }
+       
+      
+     .mainLoadCSS{
+       width: fit-content ;
+       height: 600px;
+     }
+
+     .loadingCSS {
+      background-color: white;
+      border-radius: 25px;
+      position: absolute;
+      top: 15%;
+      left: 35%;
+      text-align: center;
+      width: 150px;
+      border: 1px solid  #fdd835;
+    }
+    
+    .loadingCSS h1{
+      font-size: 0.5rem;
+    }
+
+    #WrapNav{
+      padding: 0px 0px;
+      width: 100%;
+    }
+
+    
+    #landingPageTOP{
+      margin-top: 250px;
+    }
+
+    }
+
+
+
   #searchBars > li > input:hover {
     /* background-color: transparent; */
     outline: none;
@@ -306,15 +449,3 @@
   .LogoutHOver:hover{
     background-color: yellowgreen;
   }
-
-  .loadingCSS {
-    background-color: white;
-    border-radius: 50px;
-    position: absolute;
-    top: 12%;
-    left: 45%;
-    text-align: center;
-    width: 250px;
-    border: 1px solid  #fdd835;
-  }
-

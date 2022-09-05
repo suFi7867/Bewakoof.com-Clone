@@ -1,11 +1,52 @@
 .main {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     width: 100%;
     font-family: "Montserrat", "sans-serif";
     margin-top: 12rem;
     margin-bottom: 2rem;
     text-align: center;
   }
+
+
+  
+
+    /* meidum screens */
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+     
+      .main {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        font-family: "Montserrat", "sans-serif";
+        margin-top: 12rem;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+    
+      
+    }
+
+
+
+         /* small screens */
+    @media all and (min-width: 320px) and (max-width: 767px) {
+     
+      .main {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        font-family: "Montserrat", "sans-serif";
+        margin-top: 12rem;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      
+    }
+
+
+
+
   .submain {
     display: flex;
     margin: auto;
