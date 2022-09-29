@@ -79,15 +79,15 @@ const PriceSorthigh = ()=>{
         />
 
 
-      <Wrap justify='center' style={{ margin:"auto", marginTop:"20px"}}  >
+      <Stack justify='center' style={{ margin:"auto", marginTop:"20px"}}  >
 
+
+             
+      
+
+             <VStack spacing={5}>
 
              <Text color="gray.500" fontWeight="bold" > HOME / MEN /   PRODUCTS </Text>
-
-             <Divider orientation='horizontal' />  
-
-             <VStack>
-
 
              <Text align="center" fontSize="20" fontWeight="bold" >Men Clothing(8803)</Text>
             
@@ -98,7 +98,7 @@ const PriceSorthigh = ()=>{
              </ButtonGroup>
  
                   
-             <HStack width="1200px" >
+             <HStack width="full" padding="0 50px">
                 <Text color="gray.500" fontWeight="bold" > FILTER </Text> <Spacer /> 
                 <Text color="gray.500" fontWeight="bold" > CLEAR ALL</Text>
              </HStack>
@@ -106,15 +106,15 @@ const PriceSorthigh = ()=>{
              </VStack>
 
              
-        <HStack spacing={50} width="1200px" justify="stretch"  >
+        <HStack spacing={50} width={{base:"100%", lg:"1200px"}} justify="stretch"  >
 
            {/* SIDEBAR */}
-           <ProductsSidebar   />
+           
 
                 {/* PRODUCTS */}
             
 
-            <SimpleGrid spacing={5}  columns={[1,2,2,3]}>
+            <SimpleGrid padding={5} spacing={5} columns={{base:2,md:3,lg:4}} >
 
             {mendata.map((el)=> (
                 <ProductCard  {...el} />
@@ -129,7 +129,7 @@ const PriceSorthigh = ()=>{
 
 
 
-      </Wrap>
+      </Stack>
 
       <ProductCard />
 

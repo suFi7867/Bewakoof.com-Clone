@@ -7,7 +7,7 @@ import { IoSearchOutline } from "react-icons/io5";
 
 import { FaUserAlt } from "react-icons/fa";
 import { AppContext } from "../Context/AppContext";
-import { Circle, SimpleGrid, Spacer, Text, Wrap } from "@chakra-ui/react";
+import { Box, Circle, Flex, HStack, Image, Input, SimpleGrid, Spacer, Stack, Text, useToast, Wrap } from "@chakra-ui/react";
 
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const [active, setActive] = useState("Men");
   const [info, setinfo] = useState(false);
-  
+  const toast = useToast()
  // console.log(userName)
 
   const token = localStorage.getItem("jwtoken");
@@ -43,14 +43,22 @@ const Navbar = () => {
   const LogOut_User = () =>{
 
     console.log("LOGOUT IS RUNNUNG")
-    alert("LogOut User Successfully")
+    toast({
+      title: 'LOGOUT User Suxcessfull.',
+    
+      description: "created by suFi.",
+      status: 'warning',
+      duration: 3000,
+      isClosable: true,
+    })
+
     logoutUser()
   }
 
 
 
   return (
-    <div id={styles.fixedNav}>
+    <div  id={styles.fixedNav}>
       <div className={styles.upperDiv}  >
       <div className={styles.upHead} >
            
@@ -78,7 +86,8 @@ const Navbar = () => {
         <div id={styles.menuNav}  >
           <li>
             <NavLink to="/">
-              <img 
+              <Image 
+              
               id="BewakoofLogo"
                 src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg"
                 alt="logo" 
@@ -548,7 +557,7 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <NavLink to="/mobile-covers-india">MOBILE COVERS</NavLink>
+            <NavLink to="/mobile-covers-india">MOBILE </NavLink>
             <div id={styles.mainMenu3}>
               <div className={styles.dropDown}>
                 <ul>
@@ -671,20 +680,22 @@ const Navbar = () => {
 
       <Spacer />
 
-        <div id={styles.searchBars}  >
+        <HStack id={styles.searchBars}  >
  
-          <li>
-            <div className={styles.iconInput}>
+          <Box display={{base:"none", md:"block"}} >
+            <div  
+            className={styles.iconInput}>
               <IoSearchOutline />
-              <input
+              <Input
                 type="text"
                 id={styles.inpSrch}
                 width="auto"
                 placeholder="search by product,category or collection"
-              ></input>
+              ></Input>
             </div>
-            <div id={styles.searchBarsData}></div>
-          </li>
+
+            
+          </Box>
 
           {!isAuth && (
             <NavLink
@@ -756,7 +767,7 @@ const Navbar = () => {
               </span>
             </p>
           </li>
-        </div>
+        </HStack>
         </Wrap>
 
      

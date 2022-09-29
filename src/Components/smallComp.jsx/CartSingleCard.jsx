@@ -10,6 +10,7 @@ import {
     Spacer,
     Stack,
     Divider,
+    Image,
 
 
 } from '@chakra-ui/react'
@@ -31,7 +32,7 @@ const {handleChange,handleRemove,handlePrice } = useContext(AppContext)
   return (
 
 
-    <Wrap w={600} spacing={3} borderWidth='1px' borderRadius='lg' overflow='hidden' padding="5">
+    <Wrap w={{base:320, md:600}} spacing={3} borderWidth='1px' borderRadius='lg' overflow='hidden' padding="5">
           
           <HStack w="full" >
            
@@ -39,9 +40,9 @@ const {handleChange,handleRemove,handlePrice } = useContext(AppContext)
                  <VStack align="revert-layer" spacing={4} >
             
            
-            <Text  fontSize="xl" color="gray.500" >{el.Title}</Text>
+            <Text  fontSize={{base:"15px", md:"xl"}} color="gray.500" >{el.Title}</Text>
             
-            <Badge fontSize="10x" variant="outline" width="fit-content" colorScheme="teal">{"4.4  ⭐"}</Badge>
+          
             
             <Stack>
             
@@ -51,8 +52,8 @@ const {handleChange,handleRemove,handlePrice } = useContext(AppContext)
                    <Text as="s" marginLeft={4} fontSize="l" >₹{el.strikeprice}</Text>
                    </HStack>
        
-                   <HStack spacing={35} >
-                       <Badge w="fit-content" padding="3px 10px" variant="subtle" colorScheme="teal"> inclusive of all taxes </Badge>
+                   <Stack direction={{base:"column", md:"row"}} spacing={35} >
+                       
                          
                        <ButtonGroup size='sm' isAttached variant='outline'>
                           
@@ -66,7 +67,7 @@ const {handleChange,handleRemove,handlePrice } = useContext(AppContext)
                          </ButtonGroup>
 
 
-                   </HStack>
+                   </Stack>
                   
                 </Stack>
             
@@ -75,8 +76,8 @@ const {handleChange,handleRemove,handlePrice } = useContext(AppContext)
             
             <Spacer />
 
-              <Stack w={120}>
-              <HoverImage style={{borderRadius: "5px"}}  src={el.Display_image} hoverSrc={el.hover_Image}  />
+              <Stack w={150}>
+              <Image style={{borderRadius: "5px"}}  src={el.Display_image}   />
     
               </Stack>
               

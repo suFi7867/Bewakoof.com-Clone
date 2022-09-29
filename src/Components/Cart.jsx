@@ -114,11 +114,11 @@ const Cart = () => {
   return (
 
   
- <VStack marginTop="180px" justify="center" >
+ <VStack marginTop={{base:"220px", md:"180px"}} justify="center" >
 
   <Text fontSize="2xl" fontWeight="extrabold" >My Bag {TotalQty} item(S)</Text>
 
-    <Wrap  padding={10} spacing={50} >
+    <Stack direction={{base:"column", sm:"row"}} padding={10} spacing={50} >
       
       <VStack  spacing={5}   >
 
@@ -136,52 +136,52 @@ const Cart = () => {
 
       <HStack  spacing={5} w="full"  padding={3} bg="yellow.300" >  <Text fontWeight="bold" >Save extra ₹140 with TriBe</Text> <Spacer /> <ArrowRightIcon /> </HStack>
       
-      <Box fontSize="16px" w={600} spacing={3} borderWidth='1px' borderRadius='lg' overflow='hidden' padding="5" >Get Rs.200 instant discount on your First Purchase above Rs.999. Coupon code -NEW200
+      <Box fontSize="16px" w={{base:300, sm:600}} spacing={3} borderWidth='1px' borderRadius='lg' overflow='hidden' padding="5" >Get Rs.200 instant discount on your First Purchase above Rs.999. Coupon code -NEW200
      </Box>
 
-     <Box fontSize="16px" w={600} spacing={3} borderWidth='1px' borderRadius='lg' overflow='hidden' padding="5" >Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new customers only!
+     <Box fontSize="16px" w={{base:300, sm:600}} spacing={3} borderWidth='1px' borderRadius='lg' overflow='hidden' padding="5" >Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new customers only!
      </Box>
 
-     <Box bg="#ecf6f5" fontWeight="bold" fontSize="16px" w={600} spacing={3} borderWidth='1px' borderRadius='lg' overflow='hidden' padding="10px 20px" >Have a Coupon / Referral / Gift Card ? 
+     <Box bg="#ecf6f5" fontWeight="bold" fontSize="16px" w={{base:300, sm:600}} spacing={3} borderWidth='1px' borderRadius='lg' overflow='hidden' padding="10px 20px" >Have a Coupon / Referral / Gift Card ? 
      </Box>
 
 
-     <Stack  bg="gray.200" w={600} spacing={3} borderWidth='1px' overflow='hidden' padding="5" textAlign="center" > 
+     <Stack  bg="gray.200" w={{base:300, sm:600}} spacing={3} borderWidth='1px' overflow='hidden' padding="5" textAlign="center" > 
      <Text  fontWeight="bold" fontSize="20px">PRICE SUMMARY</Text> </Stack>
 
-     <VStack fontSize="16px" padding="5"  w={600} spacing={5} borderWidth='1px' overflow='hidden'  >
+     <VStack fontSize="16px" padding="5"  w={{base:300, sm:600}} spacing={5} borderWidth='1px' overflow='hidden'  >
 
       <HStack w="full" >
-        <Text fontSize="18px" >Total MRP (Incl. of taxes) </Text>
+        <Text fontSize={{base:"15px", md:"18px"}} >Total MRP (Incl. of taxes) </Text>
         <Spacer />
-        <Text fontWeight="bold" fontSize="18px" > ₹ {Totalprice} </Text>
+        <Text fontWeight="bold" fontSize={{base:"15px", md:"18px"}} > ₹ {Totalprice} </Text>
       </HStack>
 
       <HStack w="full" >
-        <Text fontSize="18px" >Shipping Charges </Text>
+        <Text fontSize={{base:"15px", md:"18px"}} >Shipping Charges </Text>
         <Spacer />
-        <Text fontWeight="bold" color="green.500" fontSize="18px" > FREE </Text>
+        <Text fontWeight="bold" color="green.500" fontSize={{base:"15px", md:"18px"}} > FREE </Text>
       </HStack>
 
       <HStack w="full" >
-        <Text fontSize="18px" >Bag Discount  </Text>
+        <Text fontSize={{base:"15px", md:"18px"}} >Bag Discount  </Text>
         <Spacer />
-        <Text fontWeight="bold" fontSize="18px" > - ₹{discountPrice} </Text>
+        <Text fontWeight="bold" fontSize={{base:"15px", md:"18px"}} > - ₹{discountPrice} </Text>
       </HStack>
 
       <HStack w="full" >
-        <Text fontSize="18px" >Subtotal  </Text>
+        <Text fontSize={{base:"15px", md:"18px"}} >Subtotal  </Text>
         <Spacer />
-        <Text fontWeight="bold" fontSize="18px" >  ₹{price}  </Text>
+        <Text fontWeight="bold" fontSize={{base:"15px", md:"18px"}} >  ₹{price}  </Text>
       </HStack>
       
-      <Badge borderRadius="2xl" fontSize="xl" padding="5px 20px" w="full" variant='subtle' color="gray.800" colorScheme='green'>
+      <Badge overflow="hidden" borderRadius="2xl" fontSize={{base:"15px", md:"xl"}} padding="5px 20px" w="full" variant='subtle' color="gray.800" colorScheme='green'>
       You are saving ₹ {discountPrice} on this order
       </Badge>
       
      </VStack>
 
-     <HStack w="full" padding="5" >
+     <Stack direction={{base:"column", md:"row"}} w="full" padding="5" >
 
    
         <Text  w="50%"  fontSize="2xl" fontWeight="bold" >Total  ₹{price}</Text>
@@ -192,7 +192,7 @@ const Cart = () => {
         CheckOut
       </Button>
 
-     </HStack>
+     </Stack>
 
               <Divider as="bold" />
               <Divider as="bold" />
@@ -204,7 +204,7 @@ const Cart = () => {
      
 
       
-    </Wrap>
+    </Stack>
 
 
  </VStack>
