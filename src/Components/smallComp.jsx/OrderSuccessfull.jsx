@@ -11,7 +11,7 @@ const OrderSuccessfull = () => {
 
   return (
     <div>
-      <VStack margin="auto"  style={{marginTop:"100px", marginBottom:"80px",}} >
+      <VStack margin="auto"  style={{marginTop:"150px", marginBottom:"80px",}} >
         <div>
           <img 
           

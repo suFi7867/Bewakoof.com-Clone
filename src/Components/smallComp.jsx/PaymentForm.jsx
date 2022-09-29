@@ -1,4 +1,4 @@
-import { Button, Divider, FormControl, FormHelperText, FormLabel, HStack, Image, Input, PinInput, PinInputField, Text, VStack, Wrap } from '@chakra-ui/react'
+import { Button, Divider, FormControl, FormHelperText, FormLabel, HStack, Image, Input, PinInput, PinInputField, Stack, Text, useToast, VStack, Wrap } from '@chakra-ui/react'
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../../Context/AppContext'
@@ -9,11 +9,19 @@ const PaymentForm = () => {
     const {cartDataEmpty, price} = useContext(AppContext)
 
     const navigate = useNavigate()
-
+    const toast = useToast()
+    
     const PaymentDone = ()=>{
 
         prompt()
-        alert("Payment Successfull")
+        toast({
+          title: 'Payment Successfull.',
+        
+          description: "Redirecting To Home Page.",
+          status: 'success',
+          duration: 3000,
+          isClosable: true,
+        })
         navigate("/OrderSuccessfull")
         cartDataEmpty()
 
@@ -25,13 +33,13 @@ const PaymentForm = () => {
     
     <>
     
-    <VStack spacing={5}  width="1200px" margin="auto"  style={{marginTop:"180px"}} marginBottom="50px">
+    <VStack padding={5} spacing={5}  w={{base:"full", md:"1200px"}} margin="auto"  style={{marginTop:"220px"}} marginBottom="50px">
 
         <Text fontWeight="bold" fontSize="xl"  >Choose your payment method</Text>
 
-        <HStack spacing={5}  >
+        <Stack direction={{base:"column", md:"row"}} spacing={5}  >
 
-           <VStack marginTop="-240px" width={300} align="flex-start" padding={5}  bg="#eeeeee"
+           <VStack   align="flex-start" padding={5}  bg="#eeeeee"
            >
 
             <HStack  >
@@ -119,7 +127,7 @@ const PaymentForm = () => {
                 <HStack width="full" >
                  <FormControl  >
                    <FormLabel>Card Number</FormLabel>
-                   <Input w={280} size="sm" />
+                   <Input  size="sm" />
                  
                  </FormControl>
 
@@ -170,7 +178,7 @@ const PaymentForm = () => {
              
     
         
-        </HStack>
+        </Stack>
 
 
     </VStack>

@@ -1,5 +1,5 @@
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
-import { Badge, Box, Button, Center, Circle, Divider, Flex, HStack, Image, Spacer, Spinner, Stack, Text, VStack, Wrap } from '@chakra-ui/react';
+import { Badge, Box, Button, Center, Circle, Divider, Flex, HStack, Image, Spacer, Spinner, Stack, Text, useToast, VStack, Wrap } from '@chakra-ui/react';
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { AppContext } from '../../Context/AppContext';
@@ -25,7 +25,7 @@ const SingleProductPage = () => {
 
  const {CartDataToMatch,cartData, handleCart} = useContext(AppContext)
  
-
+ const toast = useToast()
 
  setTimeout(() => {
  setIsLoading(false)
@@ -38,7 +38,15 @@ const SingleProductPage = () => {
     setIsButLoading(true);
    
     setTimeout(() => {
-      alert("Added To Cart")
+      
+      toast({
+        title: 'Added To Cart.',
+      
+        description: "shop more or go to cart.",
+      
+        duration: 3000,
+        isClosable: true,
+      })
     
       setIsButLoading(false);
       handleCart(data[0])

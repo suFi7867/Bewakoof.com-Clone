@@ -1,4 +1,5 @@
 
+import { useToast } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { createContext } from 'react'
 
@@ -950,10 +951,19 @@ const AppContextProvider = ({children}) => {
   const [discountPrice, setdiscountPrice] = useState(0);
   const [TotalQty, setTotalQty] = useState(0);
   const [Totalprice, setTotalPrice] = useState(0);
-
+ 
+ const  toast = useToast()
 
   const handleRemove = (id) => {
     const arr = cartData.filter((item) => item.id !== id);
+    toast({
+      title: 'Item Removed Successfully.',
+    
+      description: "created by suFi.",
+      status: 'warning',
+      duration: 3000,
+      isClosable: true,
+    })
     setCartData(arr);
     handlePrice();
   };
