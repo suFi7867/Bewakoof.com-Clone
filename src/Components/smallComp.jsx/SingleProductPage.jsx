@@ -79,7 +79,7 @@ const SingleProductPage = () => {
     
     setData(obj)
      setImage(obj[0].moreImage[0])
-}, [])
+}, [id])
 
 
 

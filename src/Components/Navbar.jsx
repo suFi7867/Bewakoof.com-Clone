@@ -8,6 +8,8 @@ import { IoSearchOutline } from "react-icons/io5";
 import { FaUserAlt } from "react-icons/fa";
 import { AppContext } from "../Context/AppContext";
 import { Box, Circle, Flex, HStack, Image, Input, SimpleGrid, Spacer, Stack, Text, useToast, Wrap } from "@chakra-ui/react";
+import SearchBar from "./smallComp.jsx/SearchBar";
+import SearchBar2 from "./smallComp.jsx/SearchBar2";
 
 
 const Navbar = () => {
@@ -59,7 +61,7 @@ const Navbar = () => {
 
   return (
     <div  id={styles.fixedNav}>
-      <div className={styles.upperDiv}  >
+      <Box display={{base:"none", md:"block"}}  className={styles.upperDiv}  >
       <div className={styles.upHead} >
            
            <div>
@@ -77,9 +79,9 @@ const Navbar = () => {
            
         </div>
 
-      </div>
+      </Box>
 
-      <Wrap id={styles.WrapNav} w="fit-content"  columns={[1,2]} >
+      <Wrap spacing={{base:-11, md:"none"}} id={styles.WrapNav} w="fit-content"  columns={[1,2]} >
      
         
   
@@ -683,7 +685,7 @@ const Navbar = () => {
         <HStack id={styles.searchBars}  >
  
           <Box display={{base:"none", md:"block"}} >
-            <div  
+           { /*<div  
             className={styles.iconInput}>
               <IoSearchOutline />
               <Input
@@ -691,8 +693,12 @@ const Navbar = () => {
                 id={styles.inpSrch}
                 width="auto"
                 placeholder="search by product,category or collection"
-              ></Input>
-            </div>
+              >
+                
+              </Input>
+           </div> */}
+ 
+           <SearchBar/>
 
             
           </Box>
@@ -708,6 +714,7 @@ const Navbar = () => {
               Login
             </NavLink>
           )}
+          
           { (
             <li
            
@@ -804,6 +811,26 @@ const Navbar = () => {
           </NavLink>
         </li>
       </div>
+
+       
+      <Box display={{base:"block", md:"none"}} >
+           { /*<div  
+            className={styles.iconInput}>
+              <IoSearchOutline />
+              <Input
+                type="text"
+                id={styles.inpSrch}
+                width="auto"
+                placeholder="search by product,category or collection"
+              >
+                
+              </Input>
+           </div> */}
+ 
+           <SearchBar2/>
+
+            
+          </Box>
     </div>
   );
 };

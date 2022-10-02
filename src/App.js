@@ -36,3 +36,7 @@ export default App;
 
 // npm i react-icons
 //npm i @chakra-ui/icons
+
+// npm i react-search-autocomplete
+
+// npm i react-custom-scrollbars-2
