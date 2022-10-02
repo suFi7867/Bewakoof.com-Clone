@@ -837,7 +837,6 @@ const CartDataToMatch = [
       Display_image : "https://images.bewakoof.com/t1080/aks-green-solid-flared-anarkali-with-tussel-details-404759-1656161846-1.jpg",
       hover_Image: "https://images.bewakoof.com/t1080/aks-green-solid-flared-anarkali-with-tussel-details-404759-1656161867-5.jpg",
       Title: "Naaz's  Green Solid Flared Anarkali With Tussel Details",
-      
       price:800,
       strikeprice:1200,
       amount:1,

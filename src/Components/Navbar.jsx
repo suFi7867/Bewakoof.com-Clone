@@ -85,7 +85,7 @@ const Navbar = () => {
      
         
   
-        <div id={styles.menuNav}  >
+        <HStack id={styles.menuNav}  >
           <li>
             <NavLink to="/">
               <Image 
@@ -678,13 +678,13 @@ const Navbar = () => {
               </div>
             </div>
           </li>
-        </div>
+        </HStack>
 
       <Spacer />
 
-        <HStack id={styles.searchBars}  >
+        <HStack w={{base:"full", md:"fit-content"}} p={2}   justifyContent="space-around"   >
  
-          <Box display={{base:"none", md:"block"}} >
+          <Box  display={{base:"none", md:"block"}} >
            { /*<div  
             className={styles.iconInput}>
               <IoSearchOutline />
@@ -721,8 +721,8 @@ const Navbar = () => {
             >
               
               {isAuth && (
-                <div style={{textAlign:"center"}} >
-                <div style={{display:"flex", gap:"10px", alignItems:"center" , textAlign:"center"}}>
+                <HStack justifyContent="space-around" style={{textAlign:"center"}} >
+                <HStack  justifyContent="space-around"  >
                   <p>
                     
                 <FaUserAlt />
@@ -743,10 +743,10 @@ const Navbar = () => {
                  >
                     Logout
                  </button>
-                </div>
+                </HStack>
 
 
-                </div>
+                </HStack>
               )}
             </li>
           )}

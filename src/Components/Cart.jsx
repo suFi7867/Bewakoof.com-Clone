@@ -70,9 +70,9 @@ const Cart = () => {
 
     return (  
 
-        <Wrap justify="center" style={{marginTop: "80px"}}>
 
-            <HStack>
+ 
+            <Stack alignItems="center" p={15} direction={{base:"column", md:"row"}}  marginTop={{base:"220px", md:"180px"}} justify="center">
 
             <Image src='https://cdn.dribbble.com/users/887568/screenshots/3172047/ufo.gif' />
          
@@ -101,9 +101,9 @@ const Cart = () => {
 
 
            </VStack>
-            </HStack>
+            </Stack>
 
-        </Wrap>
+      
       
       ) 
   
