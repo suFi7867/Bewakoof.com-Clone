@@ -71,7 +71,7 @@ const Login = () => {
 
   return (
     <>
-      <Stack justify="center" direction={{base:"column" ,sm:"column", md:"row"}} marginTop={200} className={styles.main}>
+      <Stack justify="center" direction={{base:"column" ,sm:"column", md:"row"}} marginTop={200} marginBottom={100} className={styles.main}>
         
         <VStack 
        
@@ -97,7 +97,7 @@ const Login = () => {
             for Latest trends, exciting offers and everything Bewakoof!
           </p>
           <Input
-
+        minH={{base:"40px", md:"50px"}}
           w={{base:"300px",sm:"420px", md:"420px"}}
             style={{
              
@@ -116,7 +116,7 @@ const Login = () => {
           
           />
           <Input
-
+minH={{base:"40px", md:"50px"}}
           w={{base:"300px", sm:"420px"}}
             style={{
              
@@ -137,6 +137,7 @@ const Login = () => {
           />
 
           <Button
+         
            w={{base:"300px", sm:"420px"}}
             style={{
               backgroundColor: "#00AFAF",
@@ -152,7 +153,7 @@ const Login = () => {
          
               height: "60px",
               textTransform: "uppercase",
-              marginTop: "10px",
+             
             }}
             onClick={handleClick}
           >
