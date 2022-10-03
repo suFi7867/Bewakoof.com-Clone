@@ -67,8 +67,6 @@ img3={data.giftVoucher.forAll}
 <HStack spacing={50} width={{base:"100%", lg:"1200px"}} justify="stretch"  >
 
  {/* SIDEBAR */}
- 
-
       {/* PRODUCTS */}
   
 
@@ -78,8 +76,6 @@ img3={data.giftVoucher.forAll}
       <ProductCard  {...el} />
   ) )} 
 
-      
-   
   </SimpleGrid>
 
 </HStack>

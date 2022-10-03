@@ -184,7 +184,7 @@ const Cart = () => {
      <Stack direction={{base:"column", md:"row"}} w="full" padding="5" >
 
    
-        <Text  w="50%"  fontSize="2xl" fontWeight="bold" >Total  ₹{price}</Text>
+        <Text  w={{base:"full", md:"50%"}}  fontSize="2xl" fontWeight="bold" >Total  ₹ {price}</Text>
          
         <Divider w="10%"  orientation='vertical' />
 

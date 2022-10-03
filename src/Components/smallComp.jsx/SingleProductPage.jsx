@@ -97,18 +97,18 @@ const SingleProductPage = () => {
 
 
   return (
-    <Stack direction={{base:"column", md:"row"}} spacing={{base:5, sm:30}} padding={5} justify="center" style={{ marginTop:"150px", marginBottom:"50px"}} >
+    <Stack w="full"  margin="auto" alignSelf="center" justifyContent="center" direction={{base:"column", md:"row"}} spacing={{base:0, sm:30}} padding={5} justify="center" style={{ marginTop:"150px", marginBottom:"50px"}} >
 
-       <Stack 
+       <Stack   
        flexDirection={{base:"column-reverse", md:"row"}} spacing={5} padding={5}> 
          
-            <Stack direction={{base:"row", md:"column"}}   padding={3} >
+            <Stack direction={{base:"row", md:"column"}}   maxH="500px"  padding={3} >
 
              <ChevronDownIcon display={{base:"none", md:"block"}} boxSize="30px" color="gray.500"  cursor="pointer" />
 
                 {data[0].moreImage.map((img)=> (
 
-                    <Image borderRadius={5} alt={data[0].Title}   width={{base:"50px",sm:"100px"}}
+                    <Image borderRadius={5} alt={data[0].Title}   maxW={"70"} minW="50px"
                     objectFit='cover' src={img} 
                     onClick={()=>setImage(img)}   cursor="pointer" />
 
@@ -117,22 +117,23 @@ const SingleProductPage = () => {
             </Stack>
 
             <Stack>
-            <Image borderRadius={15} src={DefaultImg} w="550px" minW="200px" />
+            <Image borderRadius={15} src={DefaultImg} maxH="500px" minW="200px" />
             </Stack>
             
         </Stack>
 
 
-        <VStack  w={{base:"full", md:"50%"}} padding={5} align="revert-layer" spacing={5} >
+        <VStack    w={{base:"full", md:"50%"}} h={{base:"full" }}  padding={{base:5,  md:8}} align="revert-layer" spacing={5} >
 
         <Text fontSize={{base:"15px", md:"20px"}} fontWeight="bold" color="gray.500"  >Bewakoof</Text>
         <Text   fontSize={{base:"xl", md:"2xl"}} color="gray.500" >{data[0].Title}</Text>
         
-        <Badge fontSize={{base:"sm", md:"xl"}} variant="outline" width="fit-content" colorScheme="teal">{"4.4  ⭐"}</Badge>
+      
         
         <Stack>
 
         <HStack alignContent="center">
+        <Badge fontSize={{base:"sm", md:"xl"}} variant="outline" width="fit-content" colorScheme="teal">{"4.4  ⭐"}</Badge>
         <Text fontWeight="bold" fontSize={{base:"2xl", md:"3xl"}}  >₹{data[0].price}</Text>
        
         <Text as="s" marginLeft={4} fontSize="xl" >₹{data[0].strikeprice}</Text>
@@ -151,22 +152,22 @@ const SingleProductPage = () => {
         <Text fontWeight="extrabold">SELECT SIZE</Text>
           
           <HStack spacing={5}>
-          <Center w={{base:"40px", sm:"50px"}} h={{base:"40px", sm:"50px"}} fontSize={{base:"sm", sm:"xl"}} border="1px solid" color='black'>
+          <Center w={{base:"40px", lg:"50px"}} h={{base:"40px", lg:"50px"}} fontSize={{base:"sm", lg:"xl"}} border="1px solid" color='black'>
             S
           </Center>
-          <Center w={{base:"40px", sm:"50px"}} h={{base:"40px", sm:"50px"}} fontSize={{base:"sm", sm:"xl"}} border="1px solid" color='black'>
+          <Center w={{base:"40px", lg:"50px"}} h={{base:"40px", lg:"50px"}} fontSize={{base:"sm", lg:"xl"}} border="1px solid" color='black'>
             M
           </Center>
-          <Center w={{base:"40px", sm:"50px"}} h={{base:"40px", sm:"50px"}} fontSize={{base:"sm", sm:"xl"}} border="1px solid" color='black'>
+          <Center w={{base:"40px", lg:"50px"}} h={{base:"40px", lg:"50px"}} fontSize={{base:"sm", lg:"xl"}} border="1px solid" color='black'>
             L
           </Center>
-          <Center w={{base:"40px", sm:"50px"}} h={{base:"40px", sm:"50px"}} fontSize={{base:"sm", sm:"xl"}} bg='tomato' color='white'>
+          <Center w={{base:"40px", lg:"50px"}} h={{base:"40px", lg:"50px"}} fontSize={{base:"sm", lg:"xl"}} bg='tomato' color='white'>
             XL
           </Center>
-          <Center w={{base:"40px", sm:"50px"}} h={{base:"40px", sm:"50px"}} fontSize={{base:"sm", sm:"xl"}} border="1px solid" color='black'>
+          <Center w={{base:"40px", lg:"50px"}} h={{base:"40px", lg:"50px"}} fontSize={{base:"sm", lg:"xl"}} border="1px solid" color='black'>
             2XL
           </Center>
-          <Center w={{base:"40px", sm:"50px"}} h={{base:"40px", sm:"50px"}} fontSize={{base:"sm", sm:"xl"}} border="1px solid" color='black'>
+          <Center w={{base:"40px", lg:"50px"}} h={{base:"40px", lg:"50px"}} fontSize={{base:"sm", lg:"xl"}} border="1px solid" color='black'>
             3XL
           </Center>
          
@@ -193,7 +194,8 @@ Sleeve Length (in Inch):
         <Button  onClick={()=>handleClick()} fontSize="x-large" padding={8} w="full" colorScheme='yellow'> 
 
         <BiShoppingBag fontSize={{base:"25px",sm:"25px", md:"3xl"}}/> 
-        {!isButLoading &&  bagbutton && "ADD TO BAG" }
+        
+        {!isButLoading &&  bagbutton && "Buy Now" }
         {!isButLoading &&  !bagbutton && "ADDED" }
             {isButLoading && (
               <Spinner
