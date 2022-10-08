@@ -1,8 +1,7 @@
 
 
 # NETLIFY LINK
-https://bewakoof-sufi-clone-unit4-project.netlify.app/
-http://192.168.0.103:50832/
+https://bewakoof-clone-sufi.vercel.app/
 
 # Getting Started with Create React App
 
