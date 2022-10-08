@@ -1,6 +1,6 @@
 
 
-# NETLIFY LINK
+# PROJECT VERCEL LINK
 https://bewakoof-clone-sufi.vercel.app/
 
 # Getting Started with Create React App
