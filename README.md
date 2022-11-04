@@ -31,10 +31,15 @@
 
 <h3 align="center"><a href="https://bewakoof-clone-sufi.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
 
+<h2>Demo Video</h2>
+[Click here to see the presentation video of this project](https://www.linkedin.com/feed/update/urn:li:activity:6983691453747073024/)
+
+
+<br />
+
 <p align="center">
   <br />&#10023;
   <a href="#Demo">View Demo</a> &#10023;
-  <a href="https://github.com/m-sehrawat/Nike-Clone/issues">Report Bug</a> &#10023;
   <a href="#Getting-Started">Getting Started</a> &#10023; 
   <a href="#Install">Installing</a> &#10023;
   <a href="#Contact">Author</a> &#10023;
@@ -43,8 +48,8 @@
 
 Bewakoof.com Clone is ReactJS e-commerce web application that allows you to buy shoes & clothes online with payment gateway integration. It has a variety of categories, just visit the product listing page and you will see all the products, apply filters as per your need and in just a few clicks you can buy any products from the website. This project is just for educational purpose.
 
+<img src="https://i.ibb.co/ZHgwGBL/bloggif-634e5a001c1f6.gif" width="800px" />
 
-![cover](https://i.ibb.co/4PXGbv8/bewakoof-1.jpg)
 
 <br />
 
@@ -77,15 +82,38 @@ Bewakoof.com Clone is ReactJS e-commerce web application that allows you to buy 
 ## Glimpses of Be-Clone 🙈 :
 
 
-![cover](https://i.ibb.co/ZHgwGBL/bloggif-634e5a001c1f6.gif)
 
 
-<h2>Demo</h2>
+<table>
+  <tr>
+    <td><img src="https://i.ibb.co/FDBxbh3/Capture1.png"  alt="home" /></td>
+    <td><img src="https://i.ibb.co/HPWYSFD/Capture2.png"  alt="coupons" /></td>
+  </tr>
+  <tr>
+   <td><img src="https://i.ibb.co/hYxHq1X/Capture3.png"  alt="allProducts" /></td>
+    <td><img src="https://i.ibb.co/PwN1BXc/Capture4.png"  alt="men" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://i.ibb.co/DgKv24V/Capture11.png" height="300px" alt="allProducts" /></td>
+    <td><img src="https://i.ibb.co/Cz01hGD/Capture12.png"  alt="men" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://i.ibb.co/m8MMQXp/Capture5.png"  alt="women" /></td>
+    <td><img src="https://i.ibb.co/dt1VbjM/Capture6.png"  alt="kids" /></td>
+  </tr>
+   <tr>
+    <td><img src="https://i.ibb.co/7Nvrd2x/Capture9.png"   alt="women" /></td>
+    <td><img src="https://i.ibb.co/TmCf3fr/Capture10.png"   alt="kids" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://i.ibb.co/ypKg5zz/Capture7.png"  alt="description" /></td>
+    <td><img src="https://i.ibb.co/PWsJSyG/Capture8.png"  alt="descriptionDark" /></td>
+  </tr>
 
-[Click here to see the presentation video of this project](https://www.linkedin.com/feed/update/urn:li:activity:6983691453747073024/)
-
+</table>
 
 <br />
+
 
 
 ## Getting Started
