@@ -48,14 +48,13 @@ Bewakoof.com Clone is ReactJS e-commerce web application that allows you to buy 
 
 <br />
 
-## Screens ( All screens are responsive along with Dark Mode)
+## Screens 
 - Homepage / Landing Page
 - Product Listing Page with all categories
 - Product Description Page
 - Cart Management Page
 - Checkout with Address Management Page
 - Login / Logout Page
-- Signup Page
 - Order Summary Page
 - Single Product Page
 
@@ -83,7 +82,7 @@ Bewakoof.com Clone is ReactJS e-commerce web application that allows you to buy 
 
 <h2>Demo</h2>
 
-[Click here to see the presentation video of this project](https://www.linkedin.com/posts/m-sehrawat_reactjs-nike-nikecareers-activity-6947552300534042624-me2_?utm_source=linkedin_share&utm_medium=member_desktop_web)
+[Click here to see the presentation video of this project](https://www.linkedin.com/feed/update/urn:li:activity:6983691453747073024/)
 
 
 <br />
@@ -91,35 +90,7 @@ Bewakoof.com Clone is ReactJS e-commerce web application that allows you to buy 
 
 ## Getting Started
 
-This project was built using React, Redux, Chakra UI, HTML, CSS, JavaScript, Rest API, Node JS, Express and MongoDB with JWT and RazorPay integration. It is an e-commerce web application and for running on your local environment you should follow these guidelines.
-
-
-### Prerequisites
-
-- NPM
-- Node JS
-- MongoDB
-
-### Setup
-
-
-The project repository can be found in [GitHub link](https://github.com/m-sehrawat/Nike-Clone) or just clone the project using this command.
-
-
-```
-Using HTTPS
-
-# git clone https://github.com/m-sehrawat/Nike-Clone.git
-```
-
-+ Open terminal on your workspace with
-
-```
-cd /home/workspace/Nike-Clone
-```
-
-
-
+This project was built using React, Chakra UI, HTML, CSS, JavaScript, Rest API . It is an e-commerce web application and for running on your local environment you should follow these guidelines.
 
 
 # PROJECT VERCEL LINK
