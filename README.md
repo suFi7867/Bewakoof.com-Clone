@@ -171,8 +171,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you want to contact me, you can reach me through below handles.
 
-[![linkedin](https://img.shields.io/badge/Sufiyan Shaikh?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sufiyan-shaikh-9bb808183/)
-[![GitHub](https://img.shields.io/badge/suFi7867?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/suFi7867)
+![linkedin](https://img.shields.io/badge/Sufiyan Shaikh?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sufiyan-shaikh-9bb808183/)
+![GitHub](https://img.shields.io/badge/suFi7867?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/suFi7867)
 
 © 2022 Sufiyan Shaikh
 
